@@ -1,0 +1,143 @@
+{
+	"info": {
+		"_postman_id": "b2139cf8-cfbc-4a69-8640-bbf2d87429ae",
+		"name": "99Tech",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21566962"
+	},
+	"item": [
+		{
+			"name": "Get All Posts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4444/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4444",
+					"path": [
+						"posts"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "3",
+							"disabled": true
+						},
+						{
+							"key": "title",
+							"value": "hư",
+							"disabled": true
+						},
+						{
+							"key": "body",
+							"value": "6",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Post Details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4444/posts/667943443dc091b73d6a8f48",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4444",
+					"path": [
+						"posts",
+						"667943443dc091b73d6a8f48"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": \"1\",\r\n        \"title\": \"Test tạo\",\r\n        \"body\": \"Create cực căng\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4444/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4444",
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update post",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": \"35\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4444/posts/667943443dc091b73d6a8f48",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4444",
+					"path": [
+						"posts",
+						"667943443dc091b73d6a8f48"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete post",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4444/posts/667943443dc091b73d6a8f48",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4444",
+					"path": [
+						"posts",
+						"667943443dc091b73d6a8f48"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
